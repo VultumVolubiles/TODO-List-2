@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Записи</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+
+	<div id="thread-list">
+<!--		<div class="grid wrapper">
+			<div class="grid__row">
+				<div class="grid__item">
+					<div class="image title">{{this.test}}</div>
+				</div>
+				<div class="grid__item _image"></div>
+				<div class="grid__item _image"></div>
+			</div>
+			<div class="grid__row">
+				<div class="grid__item _image"></div>
+				<div class="grid__item _image"></div>
+				<div class="grid__item _image"></div>
+			</div>
+			<div class="grid__row">
+				<div class="grid__item _image"></div>
+				<div class="grid__item _image"></div>
+				<div class="grid__item _image"></div>
+			</div>
+		</div>
+-->
+<!--		
+		<div class="op wrapper">
+			<div class="original_post">
+				<div class="op_image">
+					{{this.test}}
+				</div>
+				<div class="op_body">
+					<div class="op_title">Test title</div>
+					<div class="op_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident illo quo numquam nemo tempora fugiat dolor. Harum cupiditate error voluptas iure, pariatur, sed ex, laboriosam quibusdam laudantium perspiciatis accusamus corporis.</div>
+				</div>
+			</div>
+		</div>
+-->
+		<div class="grid">
+			<div class="grid__row">
+				<router-link to="/list" class="grid__item">Список тредов</router-link>
+				<router-link to="/favorite" class="grid__item">Закладки</router-link>
+			</div>
+		</div>
+
+		<router-view></router-view>
+	</div>
+	
+	<script src="js/vue.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
+	<script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
+  	<script src="js/Index.js"></script>
+</body>
+</html>
